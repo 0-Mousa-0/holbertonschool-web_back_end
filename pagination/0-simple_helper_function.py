@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-
+"""Simple helper function
+"""
 
 def index_range(page, page_size):
     """a method return page requested and contant rows of it"""

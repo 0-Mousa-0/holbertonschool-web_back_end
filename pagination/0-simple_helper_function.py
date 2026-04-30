@@ -2,6 +2,7 @@
 
 
 def index_range(page, page_size):
+    """a method return page requested and contant rows of it"""
     p = page
     ps = page_size
     if page == 1:

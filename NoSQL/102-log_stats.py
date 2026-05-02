@@ -1,57 +1,39 @@
 #!/usr/bin/env python3
 """
-Provides stats about Nginx logs stored in MongoDB
-including top 10 IPs
+Provides stats about Nginx logs stored in MongoDB,
+including the top 10 most frequent IPs.
 """
-
 from pymongo import MongoClient
 
 
-def log_stats():
-    """Prints statistics about nginx logs"""
-    client = MongoClient('mongodb://127.0.0.1:27017')
+if __name__ == "__main__":
+    client = MongoClient("mongodb://127.0.0.1:27017")
     collection = client.logs.nginx
 
-    # total logs
-    total_logs = collection.count_documents({})
-    print(f"{total_logs} logs")
+    # Total logs
+    print("{} logs".format(collection.count_documents({})))
 
+    # Methods stats
     print("Methods:")
-
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
-
     for method in methods:
         count = collection.count_documents({"method": method})
-        print(f"\tmethod {method}: {count}")
+        print("\tmethod {}: {}".format(method, count))
 
-    # status check (GET /status)
-    status_check = collection.count_documents({
-        "method": "GET",
-        "path": "/status"
-    })
-    print(f"{status_check} status check")
+    # Status check stats
+    status_check = collection.count_documents(
+        {"method": "GET", "path": "/status"}
+    )
+    print("{} status check".format(status_check))
 
     # Top 10 IPs
     print("IPs:")
-
     pipeline = [
-        {
-            "$group": {
-                "_id": "$ip",
-                "count": {"$sum": 1}
-            }
-        },
-        {
-            "$sort": {"count": -1}
-        },
-        {
-            "$limit": 10
-        }
+        {"$group": {"_id": "$ip", "count": {"$sum": 1}}},
+        {"$sort": {"count": -1}},
+        {"$limit": 10}
     ]
+    top_ips = collection.aggregate(pipeline)
 
-    for doc in collection.aggregate(pipeline):
-        print(f"\t{doc['_id']}: {doc['count']}")
-
-
-if __name__ == "__main__":
-    log_stats()
+    for ip_data in top_ips:
+        print("\t{}: {}".format(ip_data.get("_id"), ip_data.get("count")))

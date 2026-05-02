@@ -1,0 +1,2 @@
+// insert decominet
+db.school.insert({name: "Holberton school"})

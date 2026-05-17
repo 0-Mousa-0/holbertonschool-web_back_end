@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="62270f92-c89f-4538-bc50-ef4f06073c62" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../0-get_list_students.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1-get_list_student_ids.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10-update_uniq_items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2-get_students_by_loc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3-get_ids_sum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../4-update_grade_by_city.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5-typed_arrays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../6-set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../7-has_array_values.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../8-clean_set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../9-groceries_list.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 2
+}]]></component>
+  <component name="ProjectId" id="3Dr8ix0jbfE1ov0KbEfLla0S7h0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-07523f343e4f-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28539.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="62270f92-c89f-4538-bc50-ef4f06073c62" name="Changes" comment="" />
+      <created>1779028964086</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1779028964086</updated>
+    </task>
+    <servers />
+  </component>
+</project>
